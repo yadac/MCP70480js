@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function () {
-    m442({ id: 1, name: 'yadac', address: 'tokyo' });
+
 }
 
 // 4-29
@@ -46,4 +46,11 @@ function m438() {
 // ex. m442({ id: 1, name: 'yadac', address: 'tokyo' }); -> 'yadac'
 function m442({ name }) {
     console.info(name);
+}
+
+// 4-43
+// using Destructuring assignment feature, retuen multiple values.
+// ex. console.dir(getMaxMin(1, 2, 3, 4, 5));
+function getMaxMin(...nums) {
+    return { max: Math.max(...nums), min: Math.min(...nums) };
 }
