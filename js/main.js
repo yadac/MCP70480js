@@ -1,8 +1,7 @@
 "use strict";
 
 window.onload = function () {
-    // console.info(sum(1, 2, 3, 4, "5"));
-    m438();
+    m442({ id: 1, name: 'yadac', address: 'tokyo' });
 }
 
 // 4-29
@@ -40,4 +39,11 @@ function m438() {
     let array = [1, 2, 3, 4, 5];
     // ... expands array
     console.info(Math.max(...array));
+}
+
+// 4-42
+// you can retrieve value from object of args using label. 
+// ex. m442({ id: 1, name: 'yadac', address: 'tokyo' }); -> 'yadac'
+function m442({ name }) {
+    console.info(name);
 }
