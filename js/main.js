@@ -1,7 +1,11 @@
 "use strict";
 
-window.onload = function () {
+let result = 0;
 
+window.onload = function () {
+    let array = [1, 2, 3, 4, 5];
+    arrayWalk(array, sumElement);
+    console.info(result);
 }
 
 // 4-29
@@ -53,4 +57,28 @@ function m442({ name }) {
 // ex. console.dir(getMaxMin(1, 2, 3, 4, 5));
 function getMaxMin(...nums) {
     return { max: Math.max(...nums), min: Math.min(...nums) };
+}
+
+// 4-44
+// recursive
+function factorial(n) {
+    if (n != 0) {
+        return n * (n - 1);
+    }
+    return 1;
+}
+
+// 4-46
+function arrayWalk(data, f) {
+    for (let d of data) {
+        f(d);
+    }
+}
+
+function showElement(d) {
+    console.info(d);
+}
+
+function sumElement(d) {
+    result += d;
 }
