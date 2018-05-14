@@ -17,9 +17,11 @@ function Member(first, last) {
     // sealでプロパティの拡張禁止できる
     // Object.seal(this);
 }
+// prototype add property, before create instance
+Member.prototype.sex = 'male';
 
-// var mem1 = new Member('yosuke', 'adachi');
-var mem1 = Member('yosuke', 'adachi');
+var mem1 = new Member('yosuke', 'adachi');
+// var mem1 = Member('yosuke', 'adachi'); missing new
 mem1.getGreeting = function () {
     return `hello ${this.getName()}`;
 }
@@ -38,8 +40,8 @@ function hoge() {
 // call = thisで使用する引数を指定して関数を呼び出す
 // "use strict"を外したらnullのcaseの結果は'global data'となる
 // hoge.call(null);
-hoge.call(obj1);
-hoge.call(obj2);
+// hoge.call(obj1);
+// hoge.call(obj2);
 
 // instead of ESMA2015 Array.from
 function huga() {
@@ -47,4 +49,19 @@ function huga() {
     console.info(args.join('/'));
 }
 
-huga('angular', 'react', 'vue');
+// huga('angular', 'react', 'vue');
+
+
+// 5-10 prototype
+Member.prototype.getName2 = function () {
+    return this.last + this.first;
+}
+
+var mem2 = new Member('hanako', 'sato');
+// console.info(mem2.getName2());
+console.info(`mem1.sex = ${mem1.sex}`); // male
+console.info(`mem2.sex = ${mem2.sex}`); // male
+mem2.sex = 'famale';
+console.info(`mem1.sex = ${mem1.sex}`); // male
+console.info(`mem2.sex = ${mem2.sex}`); // famele
+

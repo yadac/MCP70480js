@@ -1,0 +1,12 @@
+section {
+    margin: 45 0 0 120;
+}
+
+video {
+    width: 600px;
+    height: 400px;
+}
+
+canvas {
+    background-color: gray;
+}
