@@ -3,8 +3,6 @@
 let result = 0;
 
 window.onload = function () {
-    let name = '<"Mario" & \'Luigi\'>';
-    console.log(e`hello, ${name}-san.`);
 }
 
 // 4-29
@@ -96,6 +94,8 @@ function escapeHtml(str) {
 // tagged template string
 // templates = [0]="hello, ", [1]="-san."
 // ...values = name #values[1] = undefined, !str will be false. 
+// let name = '<"Mario" & \'Luigi\'>';
+// console.log(e`hello, ${name}-san.`);
 function e(templates, ...values) {
     let result = '';
     for (let i = 0, len = templates.length; i < len; i++) {
@@ -103,3 +103,15 @@ function e(templates, ...values) {
     }
     return result;
 }
+
+// 4-51 closure
+// var myFunction = new myClosure(1);
+// console.info(myFunction());
+// console.info(myFunction());
+function myClosure(num) {
+    var result = num;
+    return function () {
+        return ++result;
+    }
+}
+
