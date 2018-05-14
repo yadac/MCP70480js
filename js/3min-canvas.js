@@ -13,5 +13,9 @@ window.onload = function () {
     ctx = stage.getContext('2d');
     stage.width = width;
     stage.height = height;
+
+    ctx.strokeRect(100, 50, 100, 50);
+    ctx.fillRect(120, 70, 100, 50);
+
 }
 
