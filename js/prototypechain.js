@@ -1,3 +1,5 @@
+"use strict";
+
 $(function () {
 
 });
@@ -40,3 +42,7 @@ console.info(`d.constructor === Animal : ${d.constructor === Animal}`);
 // both true, can refer prototypechain
 console.info(`d instanceof Dog : ${d instanceof Dog}`);
 console.info(`d instanceof Dog : ${d instanceof Animal}`);
+
+// check exitsts property or not, it can use with method
+console.info(`name in d : ${'name' in d}`);
+console.info(`name in d : ${'getName' in d}`);
