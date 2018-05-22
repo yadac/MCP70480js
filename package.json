@@ -1,0 +1,19 @@
+{
+  "name": "mcp70480js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "note.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadac/MCP70480js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yadac/MCP70480js/issues"
+  },
+  "homepage": "https://github.com/yadac/MCP70480js#readme"
+}
