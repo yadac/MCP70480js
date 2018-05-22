@@ -6,3 +6,13 @@ video {
     width: 600px;
     height: 400px;
 }
+
+article > p {
+    text-decoration: underline;
+}
+
+body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}

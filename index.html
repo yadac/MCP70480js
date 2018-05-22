@@ -12,7 +12,19 @@
 </head>
 
 <body>
-    <nav></nav>
+
+    <nav>
+        <h3>menu</h3>
+        <ul>
+            <li>
+                <a href="index.html">top page</a>
+            </li>
+            <li>
+                <a href="http://www.htmq.com/html5/nav.shtml">reference</a>
+            </li>
+        </ul>
+    </nav>
+
     <article>
         <p>canvas sample</p>
         <canvas width="200" height="200" id="mycanvas" style="border: 1px solid black;"></canvas>
@@ -21,11 +33,19 @@
         <p>html input type samples</p>
         <form action="">
             <label>month:
-                <input type="month" name="month" />
+                <!-- for capturing month and year is "month" -->
+                <input type="month" name="month" autocomplete="off">
             </label>
+            <br />
+            <label>color:
+                <!-- in html5, the input element is a void element. void element only have a start tag. end tags are not allowed for void elements. -->
+                <input type="color" name="color" />
+            </label>
+            <br />
             <input type="submit" value="send" />
         </form>
     </article>
+
 </body>
 
 
