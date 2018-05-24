@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <input type="text" id="userData">
+    <input type="text" id="userData" onchange="console.log('hello'); return false;">
     <script>
         // default behavior onclick
         document.getElementById("userData").onchange = function () {
