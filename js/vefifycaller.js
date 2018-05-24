@@ -6,5 +6,6 @@ function VerifyAddress() {
 }
 
 function OnComplete(e) {
+    // postmessageの中身だからe.dataでアクセスできるの？
     alert(e.data);
 }
