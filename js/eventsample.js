@@ -2,6 +2,15 @@ $(function () {
 
     // register eventhandler
     $('#eventsample').click(function () {
-        $(this).css("visibility", "hidden");
+        Hide($(this), function () {
+            window.alert("hidden!");
+        });
     });
 });
+
+function Hide(element, onhidden) {
+    element.css("visibility", "hidden");
+    setTimeout(() => {
+        onhidden();
+    }, 500);
+}

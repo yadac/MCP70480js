@@ -1,5 +1,6 @@
 // self references the scope of the worker object.
 self.onmessage = function (e) {
+    console.log(this);
     var result = VerifyAddress(e.data);
 
     // この意味がわからない
