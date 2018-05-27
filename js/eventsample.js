@@ -9,7 +9,8 @@ $(function () {
 });
 
 function Hide(element, onhidden) {
-    element.css("visibility", "hidden");
+    // element.css("visibility", "hidden");
+    element.hide();
     setTimeout(() => {
         onhidden();
     }, 500);
