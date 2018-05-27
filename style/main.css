@@ -36,3 +36,11 @@ body {
 #layout-out{
     background-color: antiquewhite;
 }
+
+#msg{
+    overflow: hidden;
+}
+
+#msg:hover {
+    overflow: visible;
+}
