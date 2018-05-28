@@ -1,0 +1,56 @@
+section {
+    margin: 45 0 0 120;
+}
+
+video {
+    width: 600px;
+    height: 400px;
+}
+
+article > p {
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+article {
+    background-color: azure
+}
+
+article:hover{
+    background-color: skyblue;
+}
+
+body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#layout-in {
+    width: 230px;
+    border: solid 5px gray;
+    margin: 20px;
+    padding: 10px;
+}
+
+#layout-out{
+    background-color: antiquewhite;
+}
+
+#msg{
+    overflow: hidden;
+}
+
+#msg:hover {
+    overflow: visible;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#div1, #div2, #div3{
+    width: 50px;
+    height: 50px;
+}

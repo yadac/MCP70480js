@@ -1,0 +1,6 @@
+canvas {
+    width: 400;
+    height: 200;
+    border: 10px solid gray;
+    box-shadow: 5px 5px 5px black;
+}
