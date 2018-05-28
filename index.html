@@ -7,7 +7,7 @@
     <!-- search engine read the title element to display the title of a page in its search result -->
     <title>sample</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/object.js"></script>
+    <script src="./js/video.js"></script>
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
@@ -24,6 +24,15 @@
             </li>
         </ul>
     </nav>
+
+    <article>
+        <p>play video</p>
+        <video id="player">Video is not supported</video>
+        <br />
+        <!-- ./resource/face.mp4 -->
+        <input type="text" id="videoFile" placeholder="Specify a video file here" />
+        <button onclick="playVideo()">Play</button>
+    </article>
 
     <article>
         <p>entire text when your moving on the text </p>
