@@ -15,6 +15,8 @@ Circle.prototype.getArea = function () {
 
 var device = new Device();
 Device.prototype.modelNumber = "xxx";
+device.name = "machine";
+console.log(`device.name = ${device.name}`);
 console.log(`device.modelNumber = ${device.modelNumber}`);
 
 var circle = new Circle(3);
