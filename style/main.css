@@ -63,11 +63,18 @@ article:hover{
     width: 300px;
     height: 106px;
     background:lightgray;
-    transition: width .3;
+    transition: width 0.9s;
 }
 
 #smoothdiv:hover{
     border: solid 3px blue;
     width: 400px;
     height: 100px;
+}
+
+#wrapandbreak{
+    width: 250px;
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-decoration: none;
 }
