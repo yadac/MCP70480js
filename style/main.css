@@ -43,6 +43,7 @@ article:hover{
 
 #msg{
     overflow: hidden;
+    /* transform: rotateY(90deg); */
 }
 
 #msg:hover {
