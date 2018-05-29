@@ -73,8 +73,9 @@ article:hover{
 }
 
 #wrapandbreak{
-    width: 250px;
+    /* width: 250px;
     word-wrap: break-word;
-    word-break: keep-all;
+    word-break: keep-all; */
     text-decoration: none;
+    columns: 3;
 }
