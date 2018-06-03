@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <button onclick="changeNumber();">next</button>
+    <input type="text" id="numberTextBox" value="1">
+    <script>
+
+        function Fibonacci() {
+            this.number = 1;
+            this.previousNumber = 0;
+            this.increment = function () {
+                console.log(this);
+                var newNumber = this.number + this.previousNumber;
+                this.previousNumber = this.number;
+                this.number = newNumber;
+            };
+        }
+
+        var fibonacci = new Fibonacci();
+
+        function changeNumber() {
+            fibonacci.increment();
+            var input = document.getElementById('numberTextBox');
+            input.value = fibonacci.number;
+        }
+
+    </script>
+</body>
+
+</html>

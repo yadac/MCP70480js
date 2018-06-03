@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #a1 {
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="a1">a1
-        <div id="a2">a2
-            <div id="a3">a3</div>
+    <div id="a1" style="background-color: mediumseagreen">a1
+        <div id="a2" style="background-color: pink">a2
+            <div id="a3" style="background-color: yellowgreen">a3</div>
         </div>
     </div>
+    <button onclick="submit(this);">submit</button>
     <script>
         var a1 = document.getElementById("a1");
         var a2 = document.getElementById("a2");
@@ -26,6 +32,10 @@
         function OnClick(event) {
             var e = event || window.event;
             console.log(e.currentTarget.id);
+        }
+
+        function submit(obj) {
+            obj.disabled = "disabled";
         }
 
     </script>
