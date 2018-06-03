@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #demo {
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            animation: frames 15s linear infinite;
+        }
+
+        @keyframes frames {
+            0% {
+                background: red;
+            }
+            25% {
+                width: 200px;
+                background: yellow;
+            }
+            50% {
+                width: 300px;
+                background: green;
+            }
+            75% {
+                width: 400px;
+                background: blue;
+            }
+            100% {
+                width: 500px;
+                background: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">hello world
+    </div>
+</body>
+
+</html>
