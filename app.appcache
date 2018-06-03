@@ -5,6 +5,6 @@ NETWORK:
 # if resrouces can not be downloaded to be cached.
 FALLBACK:
 # never cached
-index.html
-main.css
-main.js
+#index.html
+#main.css
+#main.js

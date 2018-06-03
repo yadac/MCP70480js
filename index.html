@@ -1,4 +1,5 @@
-<html lang="ja" manifest="app.appcache">
+<!-- <html lang="ja" manifest="app.appcache"> -->
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -6,8 +7,8 @@
     <meta name="description" content="lerning html 5" />
     <!-- search engine read the title element to display the title of a page in its search result -->
     <title>sample</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/car.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/usercomment.js"></script>
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
@@ -24,6 +25,12 @@
             </li>
         </ul>
     </nav>
+
+    <article>
+        <input type="text" id="newComment">
+        <button onclick="Show(newComment.value); Save(newComment.value);">Add</button>
+        <div id="comments"></div>
+    </article>
 
     <article>
         <button id="carbutton">Accelerate</button>
