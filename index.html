@@ -27,6 +27,15 @@
     </nav>
 
     <article>
+        <form action="">
+            please input number:
+            <input type="number" max="10" step="3" required>
+            <input type="date" step="3">
+            <button>submit</button>
+        </form>
+    </article>
+
+    <article>
         <input type="text" id="newComment">
         <button onclick="Show(newComment.value); Save(newComment.value);">Add</button>
         <div id="comments"></div>
