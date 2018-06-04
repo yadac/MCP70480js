@@ -7,22 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bg-color</title>
     <style>
-        a:link {
-            background-color: green !important;
-        }
-
         a:visited {
-            background-color: yellow !important;
+            background-color: yellow;
         }
 
         a:hover {
             background-color: red !important;
+            /* if without !important, color never change from green */
+        }
+
+        a:link {
+            background-color: green;
+            /* when multiple style applied in one attribute, apply the last one. without !important case*/
         }
     </style>
 </head>
 
 <body>
-    <a href="http://www.measureup.com" style="z-index: 1;">Get Certified Today</a>
+    <a href="http://www.yahoo.com" style="z-index: 1;">Get Certified Today</a>
 </body>
 
 </html>
