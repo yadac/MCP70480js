@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio sample</title>
+</head>
+
+<body>
+    <section>
+        <audio id="myAudio" src="./resource/Ring03.wav" muted></audio>
+        <label for="muteCheckBox">
+            <input type="checkbox" id="muteCheckBox" onclick="ToggleMute();" checked/>Muted?
+        </label>
+    </section>
+    <script>
+        var a = document.getElementById("myAudio");
+        setInterval(() => {
+            a.play();
+        }, 10000)
+        function ToggleMute() {
+            myAudio.muted = muteCheckBox.checked;
+        }
+    </script>
+</body>
+
+</html>
