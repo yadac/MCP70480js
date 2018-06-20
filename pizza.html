@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza Topping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(':button').css('background-color', 'skyblue');
+            $('#submitButton').click(function (e) {
+                var isChecked = false;
+                $('input:checkbox').each(function (index, value) {
+                    if (value.checked) {
+                        isChecked = true;
+                    }
+                });
+                if (!isChecked) {
+                    alert('please select a topping.');
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <input id="tomatoes" type="checkbox" />tomatoes
+        <br />
+        <input id="onions" type="checkbox" />onions
+        <br />
+        <input id="anchovies" type="checkbox" />anchovies
+        <br />
+        <input id="sausage" type="checkbox" />sausage
+        <br />
+        <input id="bacon" type="checkbox" />bacon
+        <br />
+        <button id="submitButton">place order</button>
+        <input type="button" value="up to you" />
+    </form>
+</body>
+
+</html>

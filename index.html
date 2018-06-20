@@ -1,10 +1,17 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <!-- name description convey hidden information to search engine -->
+    <meta name="description" content="lerning html 5" />
+    <!-- search engine read the title element to display the title of a page in its search result -->
     <title>sample</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<<<<<<< HEAD
     <script src="./js/wwcaller.js"></script>
+=======
+    <script src="./js/video.js"></script>
+>>>>>>> 354c1fd1ca8caba21c882c053b51331470f0664a
     <link rel="stylesheet" href="./style/main.css">
     <style>
         p {
@@ -15,6 +22,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <p>hello everyone!!</p>
     <table>
         <tr>
@@ -61,7 +69,76 @@
         });
 
     </script>
+=======
+
+    <nav>
+        <h3>menu</h3>
+        <ul>
+            <li>
+                <a href="index.html">top page</a>
+            </li>
+            <li>
+                <a href="http://www.htmq.com/html5/nav.shtml">reference</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article>
+        <p>play video</p>
+        <video id="player">Video is not supported</video>
+        <br />
+        <!-- ./resource/face.mp4 -->
+        <input type="text" id="videoFile" placeholder="Specify a video file here" />
+        <button onclick="playVideo()">Play</button>
+    </article>
+
+    <article>
+        <p>entire text when your moving on the text </p>
+        <div id="msg" style="width: 200px; white-space: nowrap; text-overflow: ellipsis;">
+            Visual Studio 2017 is the latest IDE from Microsoft
+        </div>
+    </article>
+
+    <article>
+        <p>event sample</p>
+        <button id="eventsample">apply</button>
+    </article>
+
+    <article>
+        <p>canvas sample</p>
+        <canvas width="200" height="200" id="mycanvas" style="border: 1px solid black;"></canvas>
+    </article>
+    <article>
+        <p>html input type samples</p>
+        <form action="">
+            <label>month:
+                <!-- for capturing month and year is "month" -->
+                <input type="month" name="month" autocomplete="off">
+            </label>
+            <br />
+            <label>color:
+                <!-- in html5, the input element is a void element. void element only have a start tag. end tags are not allowed for void elements. -->
+                <input type="color" name="color" />
+            </label>
+            <br />
+            <input type="submit" value="send" />
+        </form>
+    </article>
+    <article>
+        <p>layout</p>
+        <div id="layout-in">
+            <span style="background-color: aquamarine">hello</span>
+        </div>
+    </article>
+    <article>
+        <p>webworker 2</p>
+        <input type="text" id="address">
+        <button id="submit" onclick="VerifyAddress()">Verify</button>
+    </article>
+>>>>>>> 354c1fd1ca8caba21c882c053b51331470f0664a
 
 </body>
+
+
 
 </html>

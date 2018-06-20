@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hide a div</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div {
+            border: 1px solid blue;
+            margin: 5px;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+    <div id="div3">3</div>
+    <button onclick="hide2ndDiv()">hide</button>
+    <script>
+        var div2 = document.getElementById("div2");
+        function hide2ndDiv() {
+            // console.log(div2.style.opacity);
+            // if (!div2.style.opacity) div2.style.opacity = 0;
+            // div2.style.opacity = div2.style.opacity == 0 ? 1 : 0;
+            div2.style.visibility = "hidden";
+        };
+    </script>
+</body>
+
+
+</html>
