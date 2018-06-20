@@ -4,12 +4,64 @@
     <meta charset="utf-8">
     <title>sample</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/class-extend.js"></script>
+    <script src="./js/wwcaller.js"></script>
     <link rel="stylesheet" href="./style/main.css">
+    <style>
+        p {
+            text-transform: capitalize;
+            text-shadow: 3px 3px 3px gray;
+        }
+    </style>
 </head>
 
 <body>
-    <canvas width="400" height="200" id="mycanvas"></canvas>
+    <p>hello everyone!!</p>
+    <table>
+        <tr>
+            <td>item</td>
+            <td>input</td>
+            <td>current</td>
+        </tr>
+        <tr>
+            <td>first name</td>
+            <td>
+                <input type="text" />
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>last name</td>
+            <td>
+                <input type="text" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <canvas width="400" height="400" id="mycanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var c = $(canvas);
+        $(c).css("border", "1px solid gray");
+        $(c).css({
+            "position": "relative",
+            "top": "50px",
+            "left": "50px"
+        });
+        var context = canvas.getContext("2d");
+        context.fillStyle = "rgb(255,0,0)";
+        context.fillRect(100, 100, 200, 200);
+
+        $(function () {
+            $('table td:nth-child(2) input').focus(function () {
+                $(this).parent().next().css("background-color", "green");
+            });
+            $('table td:nth-child(2) input').blur(function () {
+                $(this).parent().next().css("background-color", "white");
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
