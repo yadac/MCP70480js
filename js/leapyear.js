@@ -6,3 +6,4 @@ console.log(IsLeapYear(2000));
 console.log(IsLeapYear(2004));
 console.log(IsLeapYear(2100));
 
+
