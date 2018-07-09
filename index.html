@@ -8,7 +8,7 @@
     <!-- search engine read the title element to display the title of a page in its search result -->
     <title>sample</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/leapyear.js"></script>
+    <script src="./js/video.js"></script>
     <link rel="stylesheet" href="./style/main.css">
 </head>
 
@@ -28,6 +28,11 @@
             </li>
         </ul>
     </nav>
+
+    <article>
+        <p>there friends!</p>
+        <p>amigo</p>
+    </article>
 
     <article>
         <form action="">
@@ -135,6 +140,10 @@
         <input type="text" id="address">
         <button id="submit" onclick="VerifyAddress()">Verify</button>
     </article>
+
+    <script>
+        $("p").prepend("<b>hello</b>");
+    </script>
 
 </body>
 
